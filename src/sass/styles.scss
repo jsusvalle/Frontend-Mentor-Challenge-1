@@ -31,6 +31,12 @@ $blue: hsl(198, 60%, 50%);
     }
 }
 
+@mixin mq-desktop-large {
+    @media only screen and (min-width: 1320px) {
+        @content;
+    }
+}
+
 //* Container
 @mixin container($width, $my:0, $mx:auto) {
     width: $width;
@@ -51,7 +57,7 @@ html {
 
 body {
     font-size: 1.4rem;
-    background-color: $darkBlue-bg-intro-email;
+    background-color: #1c2230;
     font-family: $font-openSans;
     color: $white;
 }

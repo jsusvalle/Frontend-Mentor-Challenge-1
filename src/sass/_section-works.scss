@@ -4,19 +4,19 @@
         @include mq-desktop {
             display: flex;
             justify-content: space-between;
-            .image {
-                width: auto!important;
-                margin: 0!important;
+            div.image {
+                width: auto;
+                margin: 0;
                 padding-right: 8rem;
                 img {
                     min-width: 20rem;
-                    max-width: 50rem!important;
+                    max-width: 50rem;
                 }
             }
-            .text {
-                padding-top: 0!important;
+            div.text {
+                padding-top: 0;
                 h2 {
-                    font-size: 5rem!important;
+                    font-size: 5rem;
                 }
             }
         }

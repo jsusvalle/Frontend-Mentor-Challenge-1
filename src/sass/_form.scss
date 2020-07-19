@@ -1,7 +1,9 @@
 .section.form {
+    padding-top: 0;
+    padding-bottom: 0;
     .container {
         position: relative;
-        top: 230px;
+        top: 145px;
         @include container(90%, 0, auto);
         .body-form {
             text-align: center;

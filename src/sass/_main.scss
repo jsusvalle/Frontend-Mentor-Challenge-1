@@ -1,11 +1,15 @@
 main {
     //TODO ARREGLAR ESTO, EL BACKGROUND DE LA SOMBRA ESA
-    background-image: url(../../challenge-assets/images/bg-curvy-mobile.svg);
-    background-position: 50% 30%;
+    background-image: url(../../challenge-assets/images/bg-curvy-mobile.svg), linear-gradient(to top, #181f2b 0%, #181f2b 438px, #1c2230 230px, #1c2230 100%);
+    background-position: 50% 25%;
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 100%;
+    @media only screen and (min-width: 375px) {
+        background-position: 50% 30%;
+    }
     @include mq-tablet {
         background-image: url(../../challenge-assets/images/bg-curvy-desktop.svg);
+        background-position: bottom;
     }
     .image-main {
         @include container(80%, 3.5rem, auto);

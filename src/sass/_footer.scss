@@ -3,11 +3,14 @@ footer.footer {
     padding-top: 25rem;
     .container {
         @include container(85%, 0, auto);
+        @include mq-desktop-large {
+            @include container(95%, 0, auto);
+        }
         .logo-footer {
             padding-bottom: 2rem;
         }
         .grid {
-            @include mq-desktop {
+            @include mq-desktop-large {
                 padding-bottom: 6rem;
                 display: grid;
                 grid-template-columns: 335px repeat(4, 200px);
