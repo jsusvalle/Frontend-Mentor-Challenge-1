@@ -1,7 +1,7 @@
-# Frontend-Mentor-Challenge-:one:
+## Frontend-Mentor-Challenge-:one:
 Dark theme - Landing page of Frontend Mentor Challenge :computer:
 
-# My Challenge:
+### My Challenge:
 :link: https://amazing-allen-4131ea.netlify.app/
 
 ### **Preview** :arrow_down:
