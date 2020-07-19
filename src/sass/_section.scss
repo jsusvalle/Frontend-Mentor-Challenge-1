@@ -1,0 +1,34 @@
+.section {
+    background-color: $darkBlue-bg-main;
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+    .grid-container {
+        @include container(85%, 0, auto);
+        text-align: center;
+        font-family: $font-raleway;
+        @include mq-tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(2, 1fr);
+            justify-content: space-around;
+            grid-gap: 2rem;
+            div.card {
+                margin: 2rem 0;
+            }
+        }
+        .card {
+            margin: 7rem 0;
+            h3 {
+                font-size: 2.5rem;
+            }
+            img {
+                padding-bottom: 2rem;
+            }
+            p {
+                line-height: 2;
+                font-size: 1.6rem;
+                color: $white;
+            }
+        }
+    }
+}

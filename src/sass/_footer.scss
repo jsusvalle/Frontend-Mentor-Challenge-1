@@ -1,0 +1,91 @@
+footer.footer {
+    background-color: $darkBlue-bg-footer;
+    padding-top: 25rem;
+    .container {
+        @include container(85%, 0, auto);
+        .logo-footer {
+            padding-bottom: 2rem;
+        }
+        .grid {
+            @include mq-desktop {
+                padding-bottom: 6rem;
+                display: grid;
+                grid-template-columns: 335px repeat(4, 200px);
+                grid-gap: 2rem;
+                nav.nav-footer {
+                    margin-top: 0;
+                    text-align: center;
+                }
+                div.icons {
+                    padding-top: 0;
+                }
+            }
+            .location {
+                .info {
+                    display: flex;
+                    justify-content: start;
+                    align-items: baseline;
+                    i {
+                        padding-right: 2rem;
+                        font-size: 1.8rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .contact {
+                .info {
+                    display: flex;
+                    justify-content: start;
+                    align-items: baseline;
+                    i {
+                        padding-right: 2rem;
+                        font-size: 1.8rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .nav-footer {
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                a {
+                    margin-bottom: 2rem;
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 2rem;
+                }
+            }
+            .icons {
+                text-align: center;
+                font-size: 3rem;
+                padding: 12rem 0;
+                a {
+                    margin-right: 1rem;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    i {
+                        padding: 1rem;
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.credits {
+    background-color: $darkBlue-bg-footer;
+    text-align: center;
+    padding-bottom: 2rem;
+    p {
+        font-size: 2rem;
+        margin: 0;
+    }
+}

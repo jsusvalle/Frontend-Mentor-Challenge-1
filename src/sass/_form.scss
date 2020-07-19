@@ -1,0 +1,38 @@
+.section.form {
+    .container {
+        position: relative;
+        top: 230px;
+        @include container(90%, 0, auto);
+        .body-form {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: $darkBlue-bg-intro-email;
+            border-radius: 1rem;
+            margin: 0 auto;
+            min-width: 30rem;
+            max-width: 70rem;
+            .btn-mail {
+                padding: 2rem 2rem;
+                border-radius: 7rem;
+                width: 300px;
+                margin: 2rem 0;
+                border: none;
+                @include mq-tablet {
+                    margin-right: 2rem;
+                }
+            }
+            .btn-send {
+                padding: 2rem 2rem;
+                border-radius: 7rem;
+                width: 300px;
+                color: #ffffff;
+                background: linear-gradient(to right, $cyan, $blue);
+                border: none;
+                font-weight: 700;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

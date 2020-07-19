@@ -1,0 +1,66 @@
+//* Variables
+$darkBlue-bg-intro-email: hsl(217, 28%, 15%);
+$darkBlue-bg-main: hsl(218, 28%, 13%);
+$darkBlue-bg-footer: hsl(216, 53%, 9%);
+$darkBlue-bg-testimonials: hsl(219, 30%, 18%);
+$white: hsl(0, 0%, 100%);
+$font-raleway: 'Raleway',
+sans-serif;
+$font-openSans: 'Open Sans',
+sans-serif;
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+//
+//
+//* Media Querys
+@mixin mq-mobile {
+    @media only screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mq-tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+//* Container
+@mixin container($width, $my:0, $mx:auto) {
+    width: $width;
+    margin: $my $mx;
+}
+
+//HTML
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: $darkBlue-bg-intro-email;
+    font-family: $font-openSans;
+    color: $white;
+}
+
+//! Imports
+@import "header";
+@import "main";
+@import "section";
+@import "section-works";
+@import "section-testimonials";
+@import "form";
+@import "footer";

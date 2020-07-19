@@ -1,0 +1,44 @@
+main {
+    //TODO ARREGLAR ESTO, EL BACKGROUND DE LA SOMBRA ESA
+    background-image: url(../../challenge-assets/images/bg-curvy-mobile.svg);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    @include mq-tablet {
+        background-image: url(../../challenge-assets/images/bg-curvy-desktop.svg);
+    }
+    .image-main {
+        @include container(80%, 3.5rem, auto);
+        display: flex;
+        justify-content: center;
+        img {
+            min-width: 30rem;
+            max-width: 50rem;
+        }
+    }
+    .text-main {
+        @include container(80%, 0, auto);
+        text-align: center;
+        font-family: $font-raleway;
+        h1 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+        }
+        p {
+            font-size: 2rem;
+        }
+        .btn {
+            font-size: 1.4rem;
+            padding: 2rem 8rem;
+            border-radius: 3rem;
+            color: #ffffff;
+            background: linear-gradient(to right, $cyan, $blue);
+            border: none;
+            font-weight: 700;
+            margin: 2rem 0 10rem 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
