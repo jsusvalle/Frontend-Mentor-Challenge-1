@@ -1,5 +1,5 @@
-# Frontend-Mentor-Challenge-1
-Dark theme - Landing page of Frontend Mentor Challenge
+# Frontend-Mentor-Challenge-:one:
+Dark theme - Landing page of Frontend Mentor Challenge :computer:
 
 ### **Preview** :arrow_down:
 
